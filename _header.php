@@ -2,10 +2,6 @@
 <html lang="en">
 
 <head>
-    <style>
-        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/global.css">

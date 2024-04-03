@@ -1,0 +1,43 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(133, 74, 191);
+}
+
+.header-logo img {
+    width: 9.5rem;
+}
+
+nav {
+    background-color: rgb(78, 69, 140);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+nav a {
+    flex: 32%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(62, 60, 115);
+}
+footer div{
+    flex-grow: 1;
+}
+
+#wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
