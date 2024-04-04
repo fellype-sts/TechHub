@@ -26,10 +26,7 @@ if (isset($page['js']))
     <?php echo $_css ?>
     <title>TechHub - <?php echo $page["title"]  ?></title>
 </head>
-
-<body>
-    <div id="wrap">
-        <header>
+<header>
             <div class="header-logo">
                 <a href="index.php" title="Home" alt="Página inicial">
                     <img src="assets/img/logo2.png">
@@ -44,6 +41,9 @@ if (isset($page['js']))
                 </form>
             </div>
         </header>
+
+    <div id="wrap">
+        
         <nav>
             <a href="index.php" title="Home">
                 <i class="fa-solid fa-house fa-fw" style="color: #000000;"></i>
@@ -59,4 +59,5 @@ if (isset($page['js']))
 
             </a>
         </nav>
+        </header>
         <main>

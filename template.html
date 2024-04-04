@@ -11,24 +11,24 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <title>TechHub</title>
 </head>
-
+<header>
+    <div class="header-logo">
+        <a href="index.php" title="Home" alt="Página inicial">
+            <img src="assets/img/logo.png">
+        </a>
+    </div>
+    <div class="header-search">
+        <form action="search.php" method="get" onclick="return searchCheck()">
+            <input type="search" name="q" id="search" placeholder="Pesquisar...">
+            <button class="search" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
+</header>
 <body>
     <div id="wrap">
-        <header>
-            <div class="header-logo">
-                <a href="index.php" title="Home" alt="Página inicial">
-                    <img src="assets/img/logo.png">
-                </a>
-            </div>
-            <div class="header-search">
-                <form action="search.php" method="get" onclick="return searchCheck()">
-                    <input type="search" name="q" id="search" placeholder="Pesquisar...">
-                    <button class="search" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
-        </header>
+
         <nav>
             <a href="index.php" title="Home">
                 <i class="fa-solid fa-house fa-fw" style="color: #000000;"></i>
