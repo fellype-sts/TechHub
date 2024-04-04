@@ -1,3 +1,21 @@
+<?php
+
+/**
+ * Check if had included js and css arquives
+ */
+
+ $_css = $_js = '';
+if (isset($page['css']))
+    $_css = '<link rel="stylesheet" href="assets/css/' . $page["css"] . '">' . "\n";
+
+if (isset($page['js']))
+    $_js = '<script src="assets/js/' . $page["js"] . '"></script>' . "\n";
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +23,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/global.css">
-    <title>TechHub</title>
+    <?php echo $_css ?>
+    <title>TechHub - <?php echo $page["title"]  ?></title>
 </head>
 
 <body>
@@ -13,7 +32,7 @@
         <header>
             <div class="header-logo">
                 <a href="index.php" title="Home" alt="Página inicial">
-                    <img src="assets/img/logo.png">
+                    <img src="assets/img/logo2.png">
                 </a>
             </div>
             <div class="header-search">

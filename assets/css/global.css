@@ -30,6 +30,9 @@ footer {
     align-items: center;
     text-align: center;
     background-color: rgb(62, 60, 115);
+    position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer div{
     flex-grow: 1;
