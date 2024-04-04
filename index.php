@@ -1,7 +1,7 @@
 <?php         
-require ("global.php") ; 
+require ("_global.php") ; 
 $page = [
-    "title" => "{$nameproduct}",
+    "title" => "Página Inicial",
     "css" => "index.css",
     "js" => "index.js"
 ];

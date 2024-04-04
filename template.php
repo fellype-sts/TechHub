@@ -1,5 +1,5 @@
 <?php         
-require ("global.php") ; 
+require ("_global.php") ; 
 $page = [
     "title" => "{$nameproduct}",
     "css" => "index.css",

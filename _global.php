@@ -26,7 +26,7 @@ $site = [
  */
 
  $conn = new mysqli(
-    $site{"mysql_hostname"},
+    $site["mysql_hostname"],
     $site["mysql_username"],
     $site["mysql_password"],
     $site["mysql_database"]
