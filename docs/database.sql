@@ -1,10 +1,6 @@
+-- DB FODA --
+
 DROP DATABASE IF EXISTS techhub;
-
-
-CREATE DATABASE techhub CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-
-
-USE  techhub;
 
 
 CREATE TABLE category (
@@ -69,3 +65,4 @@ CREATE TABLE comment (
     cmt_status ENUM('on', 'off', 'del') DEFAULT 'on',
     FOREIGN KEY (cmt_product) REFERENCES product(product_id)
 );
+

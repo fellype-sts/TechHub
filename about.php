@@ -9,6 +9,6 @@ $page = [
 require("_header.php");
 
 ?>
-<article></article>
+<article>sobredd </article>
 
 <?php require("_footer.php"); ?>

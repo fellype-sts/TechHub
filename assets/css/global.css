@@ -140,12 +140,13 @@ nav a:hover  {
 }
 
 nav a i {
+    color: rgb(216, 179, 206);
     font-size: 2rem;
 }
 
 nav a i:hover  {
     text-decoration: none;
-
+    color: white
 }
 nav a img   {
     width: 2.2rem;
