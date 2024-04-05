@@ -27,20 +27,20 @@ if (isset($page['js']))
     <title>TechHub - <?php echo $page["title"]  ?></title>
 </head>
 <header>
-    <div class="header-logo">
-        <a href="index.php" title="Home" alt="Página inicial">          
-                <img src="assets/img/logo02.png">           
-        </a>
-    </div>
-    <div class="header-search">
-            <form action="search.php" method="get" onclick = "return searchCheck()"> 
-                <input type="search" name="q" id="search" placeholder="Pesquisar..." >
-                <button class="search" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-    </header>
+            <div class="header-logo">
+                <a href="index.php" title="Home" alt="Página inicial">
+                    <img src="assets/img/logo2.png">
+                </a>
+            </div>
+            <div class="header-search">
+                <form action="search.php" method="get" onclick="return searchCheck()">
+                    <input type="search" name="q" id="search" placeholder="Pesquisar...">
+                    <button class="search" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </header>
 
     <div id="wrap">
         
