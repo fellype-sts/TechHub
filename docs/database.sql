@@ -2,14 +2,12 @@
 
 DROP DATABASE IF EXISTS techhub;
 
-CREATE DATABASE techhub CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-
-USE  techhub;
 
 CREATE TABLE category (
 ctr_id INT PRIMARY KEY AUTO_INCREMENT,
 ctr_name VARCHAR(255)
 );
+
 
 CREATE TABLE employee(
     emp_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -31,6 +29,7 @@ user_id INT PRIMARY KEY AUTO_INCREMENT,
     user_type ENUM('ATIVO', 'BLOQUEADO', 'APAGADO') DEFAULT 'ATIVO',
     user_status ENUM('on', 'off', 'del') DEFAULT 'on'
 );
+
 
 CREATE TABLE product (
     product_id INT PRIMARY KEY AUTO_INCREMENT,
