@@ -9,7 +9,25 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    line-height: 1.3;
+    color: rgb(0, 0, 0);
 }
+
+body {
+    background-color: #ffffff;
+    background-attachment: fixed;
+}
+
+/* Elementos de uso geral */
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header img{
     margin-left: 1rem;
     width: 23rem;
@@ -152,10 +170,29 @@ footer a{
 }
 
 #wrap {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    
+    #wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 1024px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+main {
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main article {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+article{
+    padding: 3rem;
 }
 
 

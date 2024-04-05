@@ -1,7 +1,10 @@
 <?php         
 require ("_global.php") ; 
 $page = [
-    "title" => "Titulo",
+    
+
+    "title" => "Início",
+
     "css" => "index.css",
     "js" => "index.js"
 ];
@@ -9,6 +12,6 @@ $page = [
 require("_header.php");
 
 ?>
-<article>asdfsadasda</article>
+<article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam obcaecati temporibus repellendus reprehenderit quisquam fugiat dolor natus atque hic recusandae eos assumenda in maiores ut sapiente aspernatur, distinctio enim consequatur?</article>
 
 <?php require("_footer.php"); ?>
