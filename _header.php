@@ -29,7 +29,7 @@ if (isset($page['js']))
 <header>
             <div class="header-logo">
                 <a href="index.php" title="Home" alt="Página inicial">
-                    <img src="assets/img/logo2.png">
+                    <img src="assets/img/logo02.png">
                 </a>
             </div>
             <div class="header-search">
