@@ -45,17 +45,17 @@ if (isset($page['js']))
     <div id="wrap">
         
         <nav>
-        <a href="category.php" title="Categorias">
-                <i class="fa-solid fa-bars fa-fw" style="color: #000000;"></i>
-                <span>Categorias</span>
+        <a href="category.php" title="Categorias"
+        >
+                
             </a>
             <a href="index.php" title="Home">
-                <i class="fa-solid fa-house fa-fw" style="color: #000000;"></i>
+                <i class="fa-solid fa-house fa-fw" ></i>
                 <span>Início</span>
             </a>
             
             <a href="about.php" title="Sobre nós">
-                <i class="fa-solid fa-circle-info" style="color: #000000;"></i>
+                <i class="fa-solid fa-circle-info" ></i>
                 <span>Sobre</span>
 
             </a>
