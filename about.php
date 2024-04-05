@@ -9,6 +9,6 @@ $page = [
 require("_header.php");
 
 ?>
-<article>sobre nos</article>
+<article>sobre </article>
 
 <?php require("_footer.php"); ?>
