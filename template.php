@@ -1,7 +1,10 @@
 <?php         
 require ("_global.php") ; 
 $page = [
+    
+
     "title" => "Início",
+
     "css" => "index.css",
     "js" => "index.js"
 ];
