@@ -79,8 +79,8 @@ VALUES
     (1, 'Mouse Logitech 203', '2024-04-08', 'www.placeholder.com', 'Mouse Logitech 203 é um dos mouses mais vendidos do mercado.', 'https://www.mercadolivre.com.br/', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab, excepturi, ullam veniam perspiciatis officiis nostrum libero rerum ipsum minima tempore quisquam accusamus officia magni ea accusantium cumque reiciendis molestias.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate placeat obcaecati harum doloribus perferendis mollitia autem, sapiente fuga itaque officiis molestias libero ea, delectus vero error? Amet deserunt eum vero.</p>
     <figure>
-    <img src="https://picsum.photos/300/200" alt="Imagem qualquer">    
-    <figcaption>Imagem aleatória.</figcaption>                    
+    <img src="https://picsum.photos/300/200" alt="Imagem qualquer"> 
+    <figcaption>Imagem aleatória.</figcaption>
     </figure>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nulla cum voluptate sed debitis minima consequuntur sint earum iste nam corporis aperiam dolorum temporibus itaque, corrupti velit architecto? Modi, quam!</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quia distinctio iusto exercitationem qui accusantium ex ullam, excepturi illo quisquam beatae, nisi ad earum reprehenderit, maiores asperiores fuga nulla accusamus.</p>', 1, 1, 0, 'on', 199.99),
@@ -88,8 +88,8 @@ VALUES
     (2, 'Teclado Razer BlackWidow', '2024-04-08', 'www.placeholder.com', 'Teclado Razer BlackWidow é um dos teclados mais populares entre os gamers.', 'https://www.magazineluiza.com.br/', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab, excepturi, ullam veniam perspiciatis officiis nostrum libero rerum ipsum minima tempore quisquam accusamus officia magni ea accusantium cumque reiciendis molestias.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate placeat obcaecati harum doloribus perferendis mollitia autem, sapiente fuga itaque officiis molestias libero ea, delectus vero error? Amet deserunt eum vero.</p>
     <figure>
-    <img src="https://picsum.photos/300/200" alt="Imagem qualquer">    
-    <figcaption>Imagem aleatória.</figcaption>                    
+    <img src="https://picsum.photos/300/200" alt="Imagem qualquer">
+    <figcaption>Imagem aleatória.</figcaption>
     </figure>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nulla cum voluptate sed debitis minima consequuntur sint earum iste nam corporis aperiam dolorum temporibus itaque, corrupti velit architecto? Modi, quam!</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quia distinctio iusto exercitationem qui accusantium ex ullam, excepturi illo quisquam beatae, nisi ad earum reprehenderit, maiores asperiores fuga nulla accusamus.</p>', 1, 2, 0, 'on', 399.99),
@@ -98,7 +98,7 @@ VALUES
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate placeat obcaecati harum doloribus perferendis mollitia autem, sapiente fuga itaque officiis molestias libero ea, delectus vero error? Amet deserunt eum vero.</p>
     <figure>
     <img src="https://picsum.photos/300/200" alt="Imagem qualquer">    
-    <figcaption>Imagem aleatória.</figcaption>                    
+    <figcaption>Imagem aleatória.</figcaption> 
     </figure>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nulla cum voluptate sed debitis minima consequuntur sint earum iste nam corporis aperiam dolorum temporibus itaque, corrupti velit architecto? Modi, quam!</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quia distinctio iusto exercitationem qui accusantium ex ullam, excepturi illo quisquam beatae, nisi ad earum reprehenderit, maiores asperiores fuga nulla accusamus.</p>', 1, 3, 0, 'on', 999.99),
