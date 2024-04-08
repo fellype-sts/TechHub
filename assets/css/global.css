@@ -29,7 +29,8 @@ a:hover {
 }
 
 header img{
-    margin-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     width: 23rem;
 }
 
@@ -47,12 +48,14 @@ header {
     justify-content: center; /* Isso centraliza a imagem horizontalmente */
 }
 
-.header-logo img {
-    margin-left: 32rem;
-    max-width: 100%;
-    max-height: 100%; /* Evita que a imagem ultrapasse a altura do contêiner */
 
-}
+
+    .header-logo img {
+        justify-content: center;
+        display: block; /* Garante que a imagem seja tratada como um bloco */
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+    }
 
 .header-search {
     margin-right: 3rem;
@@ -196,6 +199,57 @@ article{
     padding: 3rem;
 }
 
+/* Estilos gerais para dispositivos móveis (mobile-first) */
+
+/* Outros estilos aqui... */
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    /* Estilos específicos para dispositivos móveis */
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-logo img {
+        margin-left: 0; /* Remove a margem à esquerda */
+        margin-bottom: 1rem; /* Adiciona margem inferior */
+    }
+
+    .header-search {
+        margin-right: 0; /* Remove a margem à direita */
+        margin-bottom: 1rem; /* Adiciona margem inferior */
+        width: 100%; /* Define a largura total */
+    }
+
+    .header-search form input {
+        flex-grow: 1;
+        border-radius: .35rem; /* Ajusta o raio da borda */
+        border-top-right-radius: 0; /* Remove o arredondamento na parte superior direita */
+        border-bottom-right-radius: 0; /* Remove o arredondamento na parte inferior direita */
+    }
+
+    .search-icon {
+        border-radius: .35rem; /* Ajusta o raio da borda */
+        border-top-left-radius: 0; /* Remove o arredondamento na parte superior esquerda */
+        border-bottom-left-radius: 0; /* Remove o arredondamento na parte inferior esquerda */
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 1rem; /* Aumenta o preenchimento */
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 
