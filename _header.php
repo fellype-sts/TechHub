@@ -1,10 +1,10 @@
 <?php
 // Testa se solicitou a inclusão dos arquivos ".css" e ".js"
 $_css = $_js = '';
-if (isset($page['css'])) 
+if (isset($page['css']))
     $_css = '<link rel="stylesheet" href="assets/css/' . $page["css"] . '">' . "\n";
 
-    if(isset($page['js']))
+if (isset($page['js']))
     $_js = '<script src="assets/js/' . $page["js"] . '"></script>';
 
 ?>
@@ -23,9 +23,11 @@ if (isset($page['css']))
     // Link da folha de estilos da página atual gerado dinâmicamente 
     echo $_css;
     ?>
-    <link rel="shortcut icon" href="assets/img/<?php echo $site["logo"] ?>" >
-    <title> Hypo - <?php echo $page["title"]?></title>
-    
+    <link rel="shortcut icon" href="assets/img/<?php echo $site["logo"] ?>">
+    <title> Hypo -
+        <?php echo $page["title"] ?>
+    </title>
+
 </head>
 <header>
     <div class="header-logo">
@@ -60,10 +62,12 @@ if (isset($page['css']))
             <span>Sobre</span>
 
         </a>
+        <?php // Botão de interação do perfil do usuário, modificado pelo JavaScript 
+        ?>
         <a id="userAccess" href="login.php" title="Logue-se">
-            <img id=""src="" alt="Login de Usuário" referrerpolicy="no-referrer">
-            <i id="userIcon" class="fa-solid fa-right-to-bracket"></i>
-                <span id="userLabel">Login</span>
+        <img id="userImg" src="" alt="" referrerpolicy="no-referrer"> 
+                <i id="userIcon" class="fa-solid fa-right-to-bracket fa-fw"></i>
+                <span id="userLabel">Entrar</span>
             </a>
     </nav>
     </header>

@@ -156,6 +156,15 @@ nav a img   {
     border-radius: 50%;
     margin-bottom: .25rem;
 }
+
+
+.validButton {
+    background-color: steelblue;
+}
+
+.invalidButton {
+    background-color: grey;
+}
 footer {
     display: flex;
     flex-direction: row;
@@ -197,6 +206,13 @@ main article {
 
 article{
     padding: 3rem;
+}
+/* Elementos de formulários */
+input,
+ textarea,
+  button {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 /* Estilos gerais para dispositivos móveis (mobile-first) */
