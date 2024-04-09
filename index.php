@@ -17,19 +17,19 @@ $res = $conn->query($sql);
 
 $total = $res->num_rows;
 
-$product = "";
+$view_box = "";
 
 /** If doesn't have products */
 if ($total == 0):
-    $product = "<h2>Sem ofertas disponíveis no momento.</h2>";
+    $view_box = "<h2>Sem ofertas disponíveis no momento.</h2>";
 else:
     $count = 0;
     while ($pdt = $res->fetch_assoc()):
         // Verifica se é o início de uma nova linha
         if ($count % 3 == 0):
-            $product .= '<div class="product-row">';
+            $view_box .= '<div class="product-row">';
         endif;
-        $product .= <<<HTML
+        $view_box .= <<<HTML
             <div class="product-container">
                 <div class="product" onclick="location.href = 'view.php?id={$pdt['product_id']}'">
                     <img src="https://picsum.photos/300/200" alt="{$pdt['product_name']}">
@@ -42,7 +42,7 @@ else:
         HTML;
         // Verifica se é o final de uma linha
         if ($count % 3 == 2 || $count == $total - 1):
-            $product .= '</div>';
+            $view_box .= '</div>';
         endif;
         $count++;
     endwhile;
@@ -51,6 +51,6 @@ endif;
 require ("_header.php");
 ?>
 <article>
-    <?php echo $product ?>
+    <?php echo $view_box ?>
 </article>
 <?php require ("_footer.php"); ?>

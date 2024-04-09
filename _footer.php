@@ -5,7 +5,7 @@
                 <i class="fa-solid fa-house fa-fw"></i>
             </a>
             <div>
-                <div>&copy; 2024 Eu Mesmo!</div>
+                <div class= "copyright">&copy; 2024 Eu Mesmo!</div>
                 <a href="privacy.php">Políticas de Privacidade</a>
             </div>
             <a href="#wrap">
@@ -13,10 +13,22 @@
             </a>
 
         </footer>
-    </div>
-    <script src="assets/js/global.js"></script>
+        &nbsp;
+</div>
+
+<?php // Importa as bibliotecas e configuração do Firebase ?>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+    
+
+<?php // Importa o JavaScript do tema 
+?>
+<script src="assets/js/global.js"></script>
+
+<?php
+    // Importa o JavaScript específico desta página dinâmicamente
+    echo $_js;
+    ?>
 </body>
-
-
 
 </html>

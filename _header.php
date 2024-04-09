@@ -48,7 +48,8 @@ if (isset($page['js']))
 <div id="wrap">
 
     <nav>
-        <a href="category.php" title="Categorias">
+        
+        <a  href="" title="Categorias">
             <i class="fa-solid fa-list fa-fw"></i>
             <span>Categorias</span>
         </a>

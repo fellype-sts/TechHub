@@ -1,11 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDY7Leebkl4hG4IPnGSa7hmUoGKDLnghGg",
-    authDomain: "techhub-4c86e.firebaseapp.com",
-    projectId: "techhub-4c86e",
-    storageBucket: "techhub-4c86e.appspot.com",
-    messagingSenderId: "510518238891",
-    appId: "1:510518238891:web:fe93930a6ae867d01221ee"
+    apiKey: "AIzaSyCDitOmZFuINTSdvALWF90pL9jwLviQ3Mw",
+    authDomain: "techhub-6880c.firebaseapp.com",
+    projectId: "techhub-6880c",
+    storageBucket: "techhub-6880c.appspot.com",
+    messagingSenderId: "372162759955",
+    appId: "1:372162759955:web:3caa77025b2c45177b1ee6"
   };
+  
  // Inicializa o Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -100,3 +101,11 @@ function searchCheck() {
     // Libera envio do formulário
     return true;
 }
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
