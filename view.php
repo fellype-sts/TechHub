@@ -17,7 +17,7 @@ if ($id < 0) header ('Location: 404.php');
 $sql= <<<SQL
 
 SELECT 
-	product_id, product_name, product_content 
+	product_id, product_name, product_content , product_price, product_seller
 FROM
 	product
 WHERE 
@@ -26,7 +26,7 @@ AND product_status = 'on';
 
 SQL;
 
-$res = $conn=>query($sql);
+$res = $conn->query($sql);
 
 // If articles doesn't exist show 404
 if($res->num_rows == 0) header ('Location: 404.php');
@@ -36,20 +36,35 @@ $pdt = $res->fetch_assoc();
 
 //Change title page
 
-$page['title'] = $art['art_title'];
+$page['title'] = $pdt['product_name'];
 
 $product = <<<PDT
 
 <div class="product">
     <h2>{$pdt['product_name']}</h2>
-    <small> </small>
+    <div>{$pdt['product_content']} {$pdt['product_price']} &nbsp 
+    <a href= 'https://www.mercadolivre.com.br/'> {$pdt['product_seller']}</a>
+    </div>
 </div>
 
 PDT;
 
+// Upodate number od views of product
+
+$sql= <<<SQL
+
+UPDATE product 
+    SET product_views = product_views + 1
+WHERE product_id = '{$id}';
+
+SQL;
+
+$conn->query($sql);
+
+
 require("_header.php");
 
 ?>
-<article> </article>
+<article> <?php echo $product ?> </article>
 
 <?php require("_footer.php"); ?>
