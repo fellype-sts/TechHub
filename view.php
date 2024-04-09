@@ -2,10 +2,13 @@
 require ("_global.php") ; 
 $page = [
 
+
     "title" => "Vendo produto",
+
     "css" => "index.css",
     "js" => "index.js"
 ];
+
 
 
 //Get article ID and stores it in 'id' variable
@@ -66,5 +69,6 @@ require("_header.php");
 
 ?>
 <article> <?php echo $product ?> </article>
+
 
 <?php require("_footer.php"); ?>
