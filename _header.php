@@ -24,7 +24,7 @@ if (isset($page['js']))
     echo $_css;
     ?>
     <link rel="shortcut icon" href="assets/img/<?php echo $site["logo"] ?>">
-    <title> Hypo -
+    <title> TechHub -
         <?php echo $page["title"] ?>
     </title>
 
@@ -61,6 +61,12 @@ if (isset($page['js']))
         <a href="about.php" title="Sobre nós">
             <i class="fa-solid fa-circle-info"></i>
             <span>Sobre</span>
+
+            <a href="contacts.php" title="Fale Conosco">
+            <i class="fa-regular fa-comment-dots fa-fw"></i>
+            <span>Contatos</span>
+
+        </a>
 
         </a>
         <?php // Botão de interação do perfil do usuário, modificado pelo JavaScript 

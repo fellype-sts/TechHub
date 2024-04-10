@@ -14,7 +14,7 @@ $page = array(
 require('_header.php');
 ?>
 
-<article>
+<article >
 
     <h2>Olá <span id="userName">usuário</span>!</h2>
 
@@ -40,9 +40,7 @@ require('_header.php');
 
 </article>
 
-<aside>
-    <h3>+ para você</h3>
-</aside>
+
 
 <?php
 // Inclui o rodapé do documento
