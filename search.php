@@ -16,7 +16,7 @@ if ($query != '') :
     $sql = <<<SQL
 
 SELECT 
-product_id, product_name, product_summary, product_price
+product_id, product_name, product_summary, product_price, product_thumbnail
 FROM product 
 WHERE 
 	product_date <= NOW()
@@ -64,7 +64,7 @@ HTML;
         $search_view .= <<<HTML
     <div class="view_box-container">
                 <div class="view_box" onclick="location.href = 'view.php?id={$pdt['product_id']}'">
-                    <img src="https://picsum.photos/300/200" alt="{$pdt['product_name']}">
+                    <img src="{$pdt['product_thumbnail']}" alt="{$pdt['product_name']}">
                     <div>
                         <h4>{$pdt['product_name']}</h4>
                         <p>{$pdt['product_price']}</p>
@@ -74,7 +74,7 @@ HTML;
 HTML;
 
     endwhile;
-    else :
+else:
         $search_view .= <<<HTML
 
 <h2>Procurando por {$query}</h2>
