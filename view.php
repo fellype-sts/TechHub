@@ -4,9 +4,14 @@ $page = [
 
 
     "title" => "Vendo produto",
+<<<<<<< Updated upstream
 
     "css" => "view.css",
     "js" => "index.js"
+=======
+    "css" => "view.css",
+    "js" => "view.js"
+>>>>>>> Stashed changes
 ];
 
 
