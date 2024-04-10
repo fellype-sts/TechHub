@@ -86,7 +86,7 @@ else:
     $search_view .= <<<HTML
 
     <h2>Procurando...</h2>
-    <p class="center">Digite algo no campo de busca!</p>
+    <p class="center">Digite algo no campo de busca!!!</p>
     
     HTML;
     
