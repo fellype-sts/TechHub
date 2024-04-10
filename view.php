@@ -5,7 +5,7 @@ $page = [
 
     "title" => "Vendo produto",
 
-    "css" => "index.css",
+    "css" => "view.css",
     "js" => "index.js"
 ];
 
@@ -20,7 +20,7 @@ if ($id < 0) header ('Location: 404.php');
 $sql= <<<SQL
 
 SELECT 
-	product_id, product_name, product_content , product_price, product_seller
+	product_id, product_name, product_content , product_price, product_seller, product_summary
 FROM
 	product
 WHERE 
@@ -45,6 +45,7 @@ $product = <<<PDT
 
 <div class="product">
     <h2>{$pdt['product_name']}</h2>
+    <p>{$pdt['product_summary']}</p>
     <div>{$pdt['product_content']} {$pdt['product_price']} &nbsp 
     <a href= 'https://www.mercadolivre.com.br/'> {$pdt['product_seller']}</a>
     </div>

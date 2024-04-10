@@ -27,12 +27,12 @@ else:
     while ($pdt = $res->fetch_assoc()):
         // Verifica se é o início de uma nova linha
         if ($count % 3 == 0):
-            $view_box .= '<div class="product-row">';
+            $view_box .= '<div class="view_box-row">';
         endif;
         $view_box .= <<<HTML
-            <div class="product-container">
-                <div class="product" onclick="location.href = 'view.php?id={$pdt['product_id']}'">
-                    <img src="https://picsum.photos/300/200" alt="{$pdt['product_name']}">
+            <div class="view_box-container">
+                <div class="view_box" onclick="location.href = 'view.php?id={$pdt['product_id']}'">
+                    <img src="{$pdt['product_thumbnail']}" alt="{$pdt['product_name']}">
                     <div>
                         <h4>{$pdt['product_name']}</h4>
                         <p>{$pdt['product_price']}</p>
