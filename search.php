@@ -37,7 +37,7 @@ SQL;
         'ss',
         $search_query,
         $search_query
-        
+    
     );
     $stmt->execute();
     // Get the search result
