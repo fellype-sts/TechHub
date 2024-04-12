@@ -117,6 +117,24 @@ header {
     color: grey;
 }
 
+i#burguer{
+    display: block;
+    cursor: pointer;
+}
+
+i#burguer:hover{
+    
+}
+menu{
+    display: none;
+}
+menu > ul > li > a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+
+}
 /* Menu principal (nav) */
 nav {
     background-color: rgb(0, 0, 0);
