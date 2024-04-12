@@ -30,6 +30,7 @@ if (isset($page['js']))
 
 </head>
 <header>
+<i id="burguer" onclick="clickMenu()"  class="fa-solid fa-bars fa-fw" style="color: white"></i>
     <div class="header-logo">
         <a href="index.php" title="Home" alt="Página inicial">
             <img src="assets/img/logo02.png">
@@ -43,39 +44,19 @@ if (isset($page['js']))
             </button>
         </form>
     </div>
+    
+    <menu id="itens">
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="about.php">Sobre</a></li>
+            <li><a href="contacts.php">Contatos</a></li>
+            <li><a href="login.php">Login</a></li>
+        </ul>
+    </menu>
 </header>
 
 <div id="wrap">
 
-    <nav>
-        
-        <a  href="" title="Categorias">
-            <i class="fa-solid fa-list fa-fw"></i>
-            <span>Categorias</span>
-        </a>
-        <a href="index.php" title="Home">
-            <i class="fa-solid fa-house fa-fw"></i>
-            <span>Início</span>
-        </a>
-
-        <a href="about.php" title="Sobre nós">
-            <i class="fa-solid fa-circle-info"></i>
-            <span>Sobre</span>
-
-            <a href="contacts.php" title="Fale Conosco">
-            <i class="fa-regular fa-comment-dots fa-fw"></i>
-            <span>Contatos</span>
-
-        </a>
-
-        </a>
-        <?php // Botão de interação do perfil do usuário, modificado pelo JavaScript 
-        ?>
-        <a id="userAccess" href="login.php" title="Logue-se">
-        <img id="userImg" src="" alt="" referrerpolicy="no-referrer"> 
-                <i id="userIcon" class="fa-solid fa-right-to-bracket fa-fw"></i>
-                <span id="userLabel">Entrar</span>
-            </a>
-    </nav>
+   
     </header>
     <main>

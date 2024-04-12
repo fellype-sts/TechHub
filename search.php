@@ -1,5 +1,5 @@
-<?php         
-require ("_global.php") ; 
+<?php
+require("_global.php");
 $page = [
     "title" => "Procurando...",
     "css" => "index.css",
@@ -28,41 +28,48 @@ ORDER BY product_price ASC;
 
 SQL;
 
-// Prepare the query
-$search_query = "%{$query}%";
+    // Prepare the query
+    $search_query = "%{$query}%";
 
-// prepare and execute the statement
-$stmt = $conn->prepare($sql);
-$stmt->bind_param(
-    'sss',
-    $search_query,
-    $search_query,
-    $search_query
-);
-$stmt->execute();
-// Get the search result
-$res = $stmt->get_result();
+    // prepare and execute the statement
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param(
+        'sss',
+        $search_query,
+        $search_query,
+        $search_query
+    );
+    $stmt->execute();
+    // Get the search result
+    $res = $stmt->get_result();
 
-// Total of registers
-$total = $res->num_rows;
-
-
-if ($total > 0) :
-
-    if ($total == 1) $viewtotal = '1 resultato';
-    else $viewtotal = "{$total} resultados";
+    // Total of registers
+    $total = $res->num_rows;
 
 
-    $search_view .= <<<HTML
+    if ($total > 0) :
+
+        if ($total == 1) $viewtotal = '1 resultato';
+        else $viewtotal = "{$total} resultados";
+
+
+        $search_view .= <<<HTML
 
         
 <h2>Procurando por {$query}</h2>
 <p><small>{$viewtotal}</small></p>
 HTML;
-
-    while ($pdt= $res->fetch_assoc()) :
-        $search_view .= <<<HTML
-    <div class="view_box-container">
+        if ($total == 0) :
+            $search_view = "<h2>Sem ofertas disponíveis no momento.</h2>";
+        else :
+            $count = 0;
+            while ($pdt = $res->fetch_assoc()) :
+                // Verifica se é o início de uma nova linha
+                if ($count % 3 == 0) :
+                    $search_view .= '<div class="view_box-row">';
+                endif;
+                $search_view .= <<<HTML
+            <div class="view_box-container">
                 <div class="view_box" onclick="location.href = 'view.php?id={$pdt['product_id']}'">
                     <img src="{$pdt['product_thumbnail']}" alt="{$pdt['product_name']}">
                     <div>
@@ -71,10 +78,15 @@ HTML;
                     </div>
                 </div>
             </div>
-HTML;
-
-    endwhile;
-else:
+        HTML;
+                // Verifica se é o final de uma linha
+                if ($count % 3 == 2 || $count == $total - 1) :
+                    $search_view .= '</div>';
+                endif;
+                $count++;
+            endwhile;
+        endif;
+    else :
         $search_view .= <<<HTML
 
 <h2>Procurando por {$query}</h2>
@@ -82,22 +94,22 @@ else:
 
 HTML;
     endif;
-else:
+else :
     $search_view .= <<<HTML
 
     <h2>Procurando...</h2>
     <p class="center">Digite algo no campo de busca!!!</p>
     
     HTML;
-    
-    endif;
+
+endif;
 
 
 require("_header.php");
 ?>
 <article><?php
-    
-    echo $search_view;
-    ?></article>
+
+            echo $search_view;
+            ?></article>
 
 <?php require("_footer.php"); ?>
