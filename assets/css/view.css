@@ -1,0 +1,41 @@
+/* Estilos para o produto */
+.product {
+    display: block;
+    margin: auto;
+    max-width: 1024px;
+    background-color:rgb(255, 255, 255); /* Fundo branco para o produto */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.product h2 {
+    color: #000; /* Cor preta para o nome do produto */
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 15px;
+    line-height: 1.5; /* Espaçamento entre linhas aumentado */
+}
+
+.product img {
+    display: block;
+    margin: auto;
+    max-width: 100%; /* Imagem do produto ocupando a largura máxima */
+    margin-bottom: 15px;
+}
+
+.product a {
+    color: #007bff; /* Cor azul para o link do vendedor */
+    text-decoration: none;
+}
+
+.product a:hover {
+    text-decoration: underline;
+}
+.section-title {
+    text-align: center;
+    color: #000; /* Preto para o título da seção */
+    margin-bottom: 30px;
+}

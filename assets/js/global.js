@@ -101,11 +101,3 @@ function searchCheck() {
     // Libera envio do formulário
     return true;
 }
-function toggleMenu() {
-    var menu = document.getElementById("menu");
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "block";
-    }
-  }

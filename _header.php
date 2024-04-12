@@ -47,7 +47,7 @@ if (isset($page['js']))
 
 <div id="wrap">
 
-    <nav>
+<nav>
         
         <a  href="" title="Categorias">
             <i class="fa-solid fa-list fa-fw"></i>

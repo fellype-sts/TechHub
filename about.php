@@ -2,14 +2,15 @@
 require ("_global.php") ; 
 $page = [
     "title" => "",
-    "css" => "index.css",
+    "css" => "about.css",
     "js" => "index.js"
 ];
 
 require("_header.php");
 
 ?>
-<article><h1>Um pouco sobre nós...</h1>
+<article class="about-section"> 
+    <h1 class="section-title">Um pouco sobre nós...</h1>
 
 <h2>Descubra o Mundo Gamer Conosco</h2>
 
