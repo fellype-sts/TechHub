@@ -3,17 +3,22 @@
     display: none;
 }
 
-#userCard {
-    background-color: #ffffff;
-    border-radius: 3rem;
-}
 
-#userCard img {
+#userCard {
+    width: 70%;
     
     display: block;
     margin: auto;
-    width: 100%;
-    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    
+}
+
+#userCard img {  
+    display: block; 
+    margin: auto;
+    width: 20%;
+    max-width: 1024px;
     border-radius: .3rem;
 }
 
@@ -32,6 +37,18 @@ article button {
     width: 100%;
     max-width: 250px;
     cursor: pointer;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+ul {
+    list-style: none;
+}
+.panel{
+    text-align: center;
 }
 
 #btnGoogleProfile {

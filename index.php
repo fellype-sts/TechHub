@@ -40,7 +40,7 @@ else:
                 </div>
             </div>
         HTML;
-        // Verifica se é o final de uma linha
+        // Verifica se é o final de uma linha 
         if ($count % 3 == 2 || $count == $total - 1):
             $view_box .= '</div>';
         endif;

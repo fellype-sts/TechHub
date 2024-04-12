@@ -34,6 +34,7 @@ function showUserCard(user) {
 
     // Variável com a view do card
     var userCardData = `
+    <div class="panel">
     
 <img src="${user.photoURL}" alt="${user.displayName}" referrerpolicy="no-referrer">
 <h4>${user.displayName}</h4>
@@ -42,6 +43,28 @@ function showUserCard(user) {
     <li>Cadastrado em ${createdDateBr}</li>
     <li>Último login em ${lastSignInBr}</li>
 </ul>
+
+<div class="login">
+<p>Sua conta é gerenciada pelo Google. Clique no botão abaixo para acessar seu perfil no Google.</p>
+
+<p class="center">
+    <button type="button" id="btnGoogleProfile">
+        <i class="fa-brands fa-google fa-fw"></i>
+        Acessar perfil no Google
+    </button>
+</p>
+
+<p>Clique no botão abaixo se quise sair do aplicativo.</p>
+
+<p class="center">
+    <button type="button" id="btnLogout">
+    <i class="fa-solid fa-right-from-bracket fa-fw"></i>
+        Logout / Sair
+    </button>
+</p>
+
+</div>
+</div>
     
     `;
 

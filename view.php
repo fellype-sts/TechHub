@@ -43,7 +43,7 @@ $page['title'] = $pdt['product_name'];
 $product = <<<PDT
 
 <div class="product">
-    <h2>{$pdt['product_name']}</h2>
+    <h2 class= "section-title">{$pdt['product_name']}</h2>
     <p>{$pdt['product_summary']}</p>
     <div>{$pdt['product_content']} {$pdt['product_price']} &nbsp 
     <a href= 'https://www.mercadolivre.com.br/'> {$pdt['product_seller']}</a>

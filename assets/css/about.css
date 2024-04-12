@@ -1,6 +1,8 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(216, 216, 216); /* Cinza claro para o fundo */
+    background-color: rgb(216, 216, 216);
+ /* Cinza claro para o fundo */
     color: #333; /* Preto para o texto */
     margin: 0;
     padding: 0;
@@ -15,12 +17,16 @@ body {
     background-color: #fff; /* Branco para o fundo do artigo */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    margin-bottom: 3rem;
-}
+    margin-bottom: 3rem;}
 
 .section-title {
     text-align: center;
     color: #000; /* Preto para o título da seção */
     margin-bottom: 30px;
+}
+
+h2 {
+    color: #333; /* Preto para os subtítulos */
+    margin-bottom: 10px;
 }
 

@@ -14,8 +14,8 @@ $page = array(
 require('_header.php');
 ?>
 
-<article>
-    <h2>Login / Entrar</h2>
+<article class = "about-section">
+    <h2 class="section-title" >Login / Entrar</h2>
     <p>Logue-se para ter acesso aos recursos restritos do site.</p>
     <p>Use sua conta google.</p>
     <p id="loginError" class="red"></p>
