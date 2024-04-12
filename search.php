@@ -23,7 +23,7 @@ WHERE
 	AND product_status = 'off'
 	AND product_name LIKE ?
 	OR product_summary LIKE ?
-	OR product_content LIKE ?
+	
 ORDER BY product_price ASC;
 
 SQL;
@@ -34,10 +34,10 @@ SQL;
     // prepare and execute the statement
     $stmt = $conn->prepare($sql);
     $stmt->bind_param(
-        'sss',
-        $search_query,
+        'ss',
         $search_query,
         $search_query
+        
     );
     $stmt->execute();
     // Get the search result
