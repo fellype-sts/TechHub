@@ -39,3 +39,6 @@
     color: #000; /* Preto para o título da seção */
     margin-bottom: 30px;
 }
+.checked {
+    color: orange;
+  }

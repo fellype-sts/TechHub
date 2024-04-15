@@ -66,14 +66,25 @@ CREATE TABLE comment (
     cmt_status ENUM('on', 'off', 'del') DEFAULT 'on',
     FOREIGN KEY (cmt_product) REFERENCES product(product_id)
 );
+CREATE TABLE contact (
+    ctt_id INT PRIMARY KEY AUTO_INCREMENT,
+    ctt_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ctt_name VARCHAR(255),
+    ctt_email VARCHAR(255),
+    ctt_subject VARCHAR(255),
+    ctt_message TEXT,
+    ctt_status ENUM('received', 'read', 'answered', 'deleted') DEFAULT 'received'
+);
+
 
 CREATE TABLE ranking (
     rank_id INT PRIMARY KEY AUTO_INCREMENT,
     rank_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     rank_product INT,
-    rank_content TEXT,
     rank_scale INT,
+    rank_user VARCHAR(255),
     FOREIGN KEY (rank_product) REFERENCES product(product_id)
+
 );
 
 INSERT INTO
@@ -351,3 +362,36 @@ VALUES
     'doutor@belico.com',
     'bélico bélico'
     );
+INSERT INTO 
+    ranking (
+        rank_product, rank_scale 
+        ) 
+        VALUES
+        (
+            '1',
+            '4'),
+            (
+            '1',
+            '3'),(
+            '1',
+            '5'),(
+            '1',
+            '2'),(
+            '1',
+            '2'),
+            (
+            '1',
+            '4'),
+            (
+            '2',
+            '2'),
+            (
+            '2',
+            '4'),
+            (
+            '2',
+            '5'),
+            (
+            '2',
+            '3');
+            

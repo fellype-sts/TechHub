@@ -67,10 +67,12 @@ SQL;
 $conn->query($sql);
 
 
+
+
 require("_header.php");
 
 ?>
-<article> <?php echo $product ?> <?php require("widgets/_comments.php") ?></article>
+<article> <?php echo $product ?> <?php require("widgets/_ranking.php");  require("widgets/_comments.php");?></article>
 
 
 <?php require("_footer.php"); ?>
