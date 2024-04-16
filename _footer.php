@@ -27,7 +27,7 @@
 
 <?php
     // Importa o JavaScript específico desta página dinâmicamente
-    echo $_js;
+    echo $_js; 
     ?>
 </body>
 
