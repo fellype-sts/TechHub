@@ -133,9 +133,9 @@ endif;
 require('_header.php');
 ?>
 
-<article>
+<article class = "about-section">
 
-    <h2>Faça Contato</h2>
+    <h2 class="section-title">Faça Contato</h2>
 
     <?php
     // Se ocorreram erros, exibe a caixa de mensagem
@@ -149,7 +149,7 @@ require('_header.php');
         ?>
         <input type="hidden" name="send" value="">
 
-        <p>Preencha todos os campos do formulário para enviar um contato para a equipe do <strong><?php echo $site['sitename'] ?></strong>.</p>
+        <h2>Preencha todos os campos do formulário para enviar um contato para a equipe do <strong><?php echo $site['sitename'] ?></strong>.</h2>
         <p class="center red"><small>Todos os campos são obrigatórios.</small></p>
 
         <p>

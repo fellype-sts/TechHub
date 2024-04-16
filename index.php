@@ -35,12 +35,12 @@ else:
                     <img src="{$pdt['product_thumbnail']}" alt="{$pdt['product_name']}">
                     <div>
                         <h4>{$pdt['product_name']}</h4>
-                        <p>{$pdt['product_price']}</p>
+                        <p>{$pdt['product_price']} R$</p>
                     </div>
                 </div>
             </div>
         HTML;
-        // Verifica se é o final de uma linha
+        // Verifica se é o final de uma linha 
         if ($count % 3 == 2 || $count == $total - 1):
             $view_box .= '</div>';
         endif;

@@ -29,53 +29,62 @@ if (isset($page['js']))
     </title>
 
 </head>
-<header>
-    <div class="header-logo">
-        <a href="index.php" title="Home" alt="Página inicial">
-            <img src="assets/img/logo02.png">
-        </a>
-    </div>
-    <div class="header-search">
-        <form action="search.php" method="get" onclick="return searchCheck()">
-            <input type="search" name="q" id="search" placeholder="Pesquisar...">
-            <button class="search" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
-    </div>
-</header>
 
-<div id="wrap">
+<body >
 
-    <nav>
-        
-        <a  href="" title="Categorias">
-            <i class="fa-solid fa-list fa-fw"></i>
-            <span>Categorias</span>
-        </a>
-        <a href="index.php" title="Home">
-            <i class="fa-solid fa-house fa-fw"></i>
-            <span>Início</span>
-        </a>
 
-        <a href="about.php" title="Sobre nós">
-            <i class="fa-solid fa-circle-info"></i>
-            <span>Sobre</span>
-
-            <a href="contacts.php" title="Fale Conosco">
-            <i class="fa-regular fa-comment-dots fa-fw"></i>
-            <span>Contatos</span>
-
-        </a>
-
-        </a>
-        <?php // Botão de interação do perfil do usuário, modificado pelo JavaScript 
-        ?>
-        <a id="userAccess" href="login.php" title="Logue-se">
-        <img id="userImg" src="" alt="" referrerpolicy="no-referrer"> 
-                <i id="userIcon" class="fa-solid fa-right-to-bracket fa-fw"></i>
-                <span id="userLabel">Entrar</span>
+    <header>
+        <i onclick="toggleNav()" class="fa-solid fa-bars fa-fw" style="color: white"></i>
+        <div class="header-logo">
+            <a href="index.php" title="Home" alt="Página inicial">
+                <img src="assets/img/logo02.png">
             </a>
-    </nav>
+        </div>
+        <div class="header-search">
+            <form action="search.php" method="get" onclick="return searchCheck()">
+                <input type="search" name="q" id="search" placeholder="Pesquisar...">
+                <button class="search" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- <menu id="itens">
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="about.php">Sobre</a></li>
+            <li><a href="contacts.php">Contatos</a></li>
+            <li><a href="login.php">Login</a></li>
+        </ul>
+    </menu> -->
     </header>
-    <main>
+    <nav class="nav">
+        <button type="button" class="nav-close">
+            <ion-icon name="close-outline" size='large'></ion-icon>
+        </button>
+        <div class="nav-links-container">
+            <a href="index.php" class="nav-link">
+                <span class="nav-text"> Inicio </span>
+
+                <ion-icon name="home-outline" size="large" ></ion-icon>
+            </a>
+            <a href="about.php" class="nav-link">
+                <span class="nav-text"> Sobre </span>
+                <ion-icon name="information-circle-outline" size = "large"></ion-icon>
+            </a>
+            <a href="contacts.php" class="nav-link">
+                <span class="nav-text"> Contatos </span>
+                <ion-icon name="people-circle-outline" size = "large" ></ion-icon>
+            </a>
+            <a href="login.php" class="nav-link">
+                <span class="nav-text"> Login </span>
+                <ion-icon name="enter-outline" size = "large"  ></ion-icon>
+            </a>
+        </div>
+    </nav>
+
+    <div id="wrap">
+
+
+        </header>
+        <main>
