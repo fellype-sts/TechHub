@@ -30,7 +30,7 @@ if (isset($page['js']))
 
 </head>
 
-<body >
+<body>
 
 
     <header>
@@ -66,22 +66,24 @@ if (isset($page['js']))
             <a href="index.php" class="nav-link">
                 <span class="nav-text"> Inicio </span>
 
-                <ion-icon name="home-outline" size="large" ></ion-icon>
+                <ion-icon name="home-outline" size="large"></ion-icon>
             </a>
             <a href="about.php" class="nav-link">
                 <span class="nav-text"> Sobre </span>
-                <ion-icon name="information-circle-outline" size = "large"></ion-icon>
+                <ion-icon name="information-circle-outline" size="large"></ion-icon>
             </a>
             <a href="contacts.php" class="nav-link">
                 <span class="nav-text"> Contatos </span>
-                <ion-icon name="people-circle-outline" size = "large" ></ion-icon>
+                <ion-icon name="people-circle-outline" size="large"></ion-icon>
             </a>
-            <a href="login.php" class="nav-link">
-                <span class="nav-text"> Login </span>
-                <ion-icon name="enter-outline" size = "large"  ></ion-icon>
+            <a id="userAccess" href="login.php" title="Logue-se">
+                <img id="userImg" src="assets/img/logo02.png" alt="Login de usuário" referrerpolicy="no-referrer">
+                <ion-icon id="userIcon" name="enter-outline" size="large"></ion-icon>
+                <span id="userLabel">Entrar</span>
             </a>
         </div>
     </nav>
+
 
     <div id="wrap">
 

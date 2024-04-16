@@ -1,12 +1,12 @@
 // Seleciona os elementos do HTML para interação
 const userName = document.getElementById('userName');
 const userCard = document.getElementById('userCard');
-const btnGoogleProfile = document.getElementById('btnGoogleProfile');
 const btnLogout = document.getElementById('btnLogout');
 
 // Monitora se houve mudanças na autenticação do usuário
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+        const btnGoogleProfile = document.getElementById('btnGoogleProfile');
         // Se alguém se logou, faça isso:
         // Chama a função que exibe o card do usuário logado
         showUserCard(user);
@@ -15,12 +15,13 @@ firebase.auth().onAuthStateChanged((user) => {
         // Monitora cliques no botão de logout
         btnLogout.addEventListener('click', fbLogout);
     } else {
+        console.log('ninguem')
         // Se alguém deslogou, faça isso:
         // Obtém o parâmetro do link da página
         var searchParams = new URLSearchParams(window.location.search);
-        // Obtém o valor do parâmetro "ref"
+        //     // Obtém o valor do parâmetro "ref"
         var refValue = searchParams.get('ref');
-        // Redireciona para a página de origem
+        //     // Redireciona para a página de origem
         location.href = refValue ? refValue : 'index.php';
     }
 });
@@ -44,26 +45,7 @@ function showUserCard(user) {
     <li>Último login em ${lastSignInBr}</li>
 </ul>
 
-<div class="login">
-<p>Sua conta é gerenciada pelo Google. Clique no botão abaixo para acessar seu perfil no Google.</p>
 
-<p class="center">
-    <button type="button" id="btnGoogleProfile">
-        <i class="fa-brands fa-google fa-fw"></i>
-        Acessar perfil no Google
-    </button>
-</p>
-
-<p>Clique no botão abaixo se quise sair do aplicativo.</p>
-
-<p class="center">
-    <button type="button" id="btnLogout">
-    <i class="fa-solid fa-right-from-bracket fa-fw"></i>
-        Logout / Sair
-    </button>
-</p>
-
-</div>
 </div>
     
     `;
