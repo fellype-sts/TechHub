@@ -34,12 +34,12 @@ if (isset($page['js']))
 
 
     <header>
-        <i onclick="toggleNav()" class="fa-solid fa-bars fa-fw" style="color: white"></i>
-        <div class="header-logo">
-            <a href="index.php" title="Home" alt="Página inicial">
-                <img src="assets/img/logo02.png">
-            </a>
-        </div>
+            <i onclick="toggleNav()" class="fa-solid fa-bars fa-fw header-menu-icon" style="color: white"></i>
+            <div class="header-logo">
+                <a href="index.php" title="Home" alt="Página inicial">
+                    <img src="assets/img/logo02.png">
+                </a>
+            </div>
         <div class="header-search">
             <form action="search.php" method="get" onclick="return searchCheck()">
                 <input type="search" name="q" id="search" placeholder="Pesquisar...">
@@ -48,15 +48,6 @@ if (isset($page['js']))
                 </button>
             </form>
         </div>
-
-        <!-- <menu id="itens">
-        <ul>
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="about.php">Sobre</a></li>
-            <li><a href="contacts.php">Contatos</a></li>
-            <li><a href="login.php">Login</a></li>
-        </ul>
-    </menu> -->
     </header>
     <nav class="nav">
         <button type="button" class="nav-close">

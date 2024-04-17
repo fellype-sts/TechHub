@@ -1,7 +1,7 @@
 <?php         
 require ("_global.php") ; 
 $page = [
-    "title" => "",
+    "title" => "Sobre nós",
     "css" => "about.css",
     "js" => "index.js"
 ];
