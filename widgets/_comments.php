@@ -3,7 +3,7 @@
 
 if (isset($_POST['txt_comment'])) :
 
-    
+
     $cmtform = [
         'product_id' => intval($_POST['product_id']),
         'social_id' => trim(htmlspecialchars($_POST['social_id'])),
@@ -13,29 +13,29 @@ if (isset($_POST['txt_comment'])) :
         'txt_comment' => trim(strip_tags($_POST['txt_comment']))
     ];
 
-    
+
     if (!in_array("", $cmtform)) :
 
-        
+
         $sql = <<<SQL
 
-INSERT INTO comment (
-    cmt_product,
-    cmt_social_id,
-    cmt_social_name,
-    cmt_social_photo,
-    cmt_social_email,
-    cmt_content
-) VALUES (
-    ?,?,?,?,?,?
-)
+        INSERT INTO comment (
+            cmt_product,
+            cmt_social_id,
+            cmt_social_name,
+            cmt_social_photo,
+            cmt_social_email,
+            cmt_content
+        ) VALUES (
+            ?,?,?,?,?,?
+        )
 
-SQL;
+        SQL;
 
-       
+
         $stmt = $conn->prepare($sql);
 
-    
+
         $stmt->bind_param(
             "isssss",
             $cmtform['product_id'],
@@ -46,7 +46,7 @@ SQL;
             $cmtform['txt_comment']
         );
 
-        
+
         $stmt->execute();
 
     endif;

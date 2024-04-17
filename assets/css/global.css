@@ -156,6 +156,10 @@ header>i:hover{
     overflow: hidden;
 
 }
+.nav a img {
+    width: 2rem;
+    border-radius: 50%;
+}
 
 .nav-close {
     background: none;
