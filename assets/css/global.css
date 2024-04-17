@@ -38,11 +38,22 @@ header img {
 }
 
 header {
+    
+    padding-bottom: 30px;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    
+}
+
+header>i{
+    padding: 2rem;
+    font-size: 2rem;
+    margin-top: 1.8rem;
+}
+header>i:hover{
+    cursor: pointer;
 }
 
 .header-logo {
@@ -133,6 +144,7 @@ header {
 }
 
 .nav {
+    
     width: 16rem;
     height: 100%;
     position: absolute;
@@ -223,17 +235,17 @@ footer a {
     color: white;
 }
 
-#wrap {
+
     #wrap {
         position: relative;
         width: 100%;
         height: 100%;
-        max-width: 1024px;
+        
         margin: auto;
         display: flex;
         flex-direction: column;
     }
-}
+
 
 main {
     display: flex;
@@ -243,12 +255,13 @@ main {
 }
 
 main article {
+    
     flex-grow: 1;
     background-color: rgb(216, 216, 216);
 }
 
 article {
-    padding: 3rem;
+    padding: 5rem;
 }
 
 /* Elementos de formulários */
@@ -267,7 +280,12 @@ button {
 @media only screen and (max-width: 767px) {
     /* Estilos específicos para dispositivos móveis */
 
+    body {
+        padding-bottom: 50px; /* Adicione o valor que for necessário para o espaço do footer */
+    }
+
     header {
+        
         flex-direction: column;
         align-items: center;
     }
@@ -320,5 +338,6 @@ button {
     footer {
         flex-direction: column;
         align-items: center;
+        
     }
 }

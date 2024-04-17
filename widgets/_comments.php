@@ -117,3 +117,4 @@ endif;
     <?php echo $view_total ?>
     <?php echo html_entity_decode($comments_view) ?>
 </div>
+</div>

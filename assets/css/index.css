@@ -27,7 +27,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
-    width: auto;
+    width: 60%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     overflow: hidden; /* Para garantir que a imagem não ultrapasse as bordas do contêiner */
@@ -39,10 +39,10 @@ body {
 
 
 .view_box img {
-    width: auto;
-    height: 26rem;
+    width: 100%;
+    height: 18rem;
  /* Para manter a proporção da imagem */
-    object-fit: cover; /* Para cobrir o contêiner mantendo a proporção */
+    
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -88,13 +88,39 @@ body {
     display: block;
 }
 @media screen and (max-width: 768px) {
-    .view_box {
-        width: calc(50% - 20px);
+    .view_box-row {
+        
+        display: block; /* Altera o layout para exibir produtos em uma coluna */
     }
+    .view_box-container {
+        
+        margin-left:auto;
+        margin-right: auto;
+        width: 60%; /* Define a largura dos contêineres de produtos para ocupar toda a largura da tela */
+        margin-bottom: 40px; /* Adiciona um espaço entre os produtos */
+    }
+    .view_box {
+        
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; /* Define a largura dos produtos para ocupar toda a largura do contêiner */
+    }
+    .view_box img{
+        
+        height: auto;
+        align-items: center;
+        object-fit: contain;
+        width: auto;
+    }
+    article {
+        padding: 0rem;
+    }
+    
 }
-
-@media screen and (max-width: 480px) {
-    .view_box {
-        width: calc(100% - 20px);
-    }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .view_box {margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
 }

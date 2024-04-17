@@ -42,15 +42,16 @@ $page['title'] = $pdt['product_name'];
 
 $product = <<<PDT
 
-<div class="product">
-    <h2 class= "section-title">{$pdt['product_name']}</h2>
-    <p>{$pdt['product_summary']}</p>
-    <div>{$pdt['product_content']} </div>
-    <div>{$pdt['product_price']}R$ </div>
-    <div> 
+<div class = "container-product-all">
+    <div class="product">
+        <h2 class= "section-title">{$pdt['product_name']}</h2>
+        <p>{$pdt['product_summary']}</p>
+        <div>{$pdt['product_content']} </div>
+        <div>{$pdt['product_price']}R$ </div>
+        <div> 
         <a href= '{$pdt['product_seller']}'> Clique aqui para comprar</a>
     </div>
-</div>
+    </div>
 
 PDT;
 
@@ -72,7 +73,8 @@ $conn->query($sql);
 require("_header.php");
 
 ?>
-<article> <?php echo $product ?> <?php require("widgets/_ranking.php");  require("widgets/_comments.php");?></article>
+<article> <?php echo $product ?> <?php require("widgets/_ranking.php");
+                                    require("widgets/_comments.php"); ?></article>
 
 
 <?php require("_footer.php"); ?>

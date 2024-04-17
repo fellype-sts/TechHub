@@ -6,7 +6,7 @@
 
 #userCard {
     width: 70%;
-    
+    text-align: center;
     display: block;
     margin: auto;
     background-color: #ffffff;
@@ -50,7 +50,22 @@ ul {
 .panel{
     text-align: center;
 }
+.login {
+    max-width: 824px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Branco para o fundo do artigo */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 3rem;
+}
 
+.section-title {
+    text-align: center;
+    color: #000; /* Preto para o título da seção */
+    margin-bottom: 30px;
+}
 #btnGoogleProfile {
     background-color: steelblue;
 }

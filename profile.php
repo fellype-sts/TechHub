@@ -15,12 +15,9 @@ require('_header.php');
 ?>
 
 <article>
-
-
-   
-
-    <div class="login">
+<div class="login">
     <div id="userCard"></div>
+   
         <p>Sua conta é gerenciada pelo Google. Clique no botão abaixo para acessar seu perfil no Google.</p>
 
         <p class="center">
@@ -40,7 +37,7 @@ require('_header.php');
         </p>
 
     </div>
-
+</div>
 </article>
 
 
