@@ -16,44 +16,26 @@ body {
 }
 
 .article:hover {
-    background-color:rgb(105, 105, 105);
+    background-color: rgb(105, 105, 105);
 }
-.view_box {
-    
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    width: 60%;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    overflow: hidden; /* Para garantir que a imagem não ultrapasse as bordas do contêiner */
-}
+
 
 .view_box:hover {
     transform: translateY(-10px);
 }
 
 
-.view_box img {
-    width: 100%;
-    height: 18rem;
- /* Para manter a proporção da imagem */
-    
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
- .view_box-container{
-    width: calc(33.33% - 20px); /* Cada produto ocupa 1/3 do espaço disponível na linha */
-}
+
+
 .view_box-row {
-    display: flex; /* Faz com que os produtos dentro da linha sejam exibidos em linha */
-    justify-content: space-between; /* Distribui os produtos uniformemente na linha */
-    margin-bottom: 20px; /* Espaçamento entre as linhas de produtos */
+    display: flex;
+    /* Faz com que os produtos dentro da linha sejam exibidos em linha */
+    justify-content: space-between;
+    /* Distribui os produtos uniformemente na linha */
+    margin-bottom: 20px;
+    /* Espaçamento entre as linhas de produtos */
 }
+
 .view_box h4 {
     margin-top: 0;
     margin-bottom: 5px;
@@ -65,7 +47,8 @@ body {
 }
 
 .hamburger-menu {
-    display: none; /* Por padrão, o menu de hambúrguer não é exibido */
+    display: none;
+    /* Por padrão, o menu de hambúrguer não é exibido */
     cursor: pointer;
 }
 
@@ -76,51 +59,134 @@ body {
     margin: 5px 0;
 }
 
-/* Estilos para o menu quando expandido */
-.menu {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* SLIDER */
+
+.product-section {
+    position: relative;
+    overflow: hidden;
+    padding: 1.2rem;
 }
 
-.menu.show {
-    display: block;
+.product-category {
+    padding: 0 10vw;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2.2rem;
+    text-transform: capitalize;
 }
-@media screen and (max-width: 768px) {
-    .view_box-row {
-        
-        display: block; /* Altera o layout para exibir produtos em uma coluna */
-    }
-    .view_box-container {
-        
-        margin-left:auto;
-        margin-right: auto;
-        width: 60%; /* Define a largura dos contêineres de produtos para ocupar toda a largura da tela */
-        margin-bottom: 40px; /* Adiciona um espaço entre os produtos */
-    }
-    .view_box {
-        
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%; /* Define a largura dos produtos para ocupar toda a largura do contêiner */
-    }
-    .view_box img{
-        
-        height: auto;
-        align-items: center;
-        object-fit: contain;
-        width: auto;
-    }
-    article {
-        padding: 0rem;
-    }
-    
+
+.view_box-container {
+    display: flex;
+    padding: 0 10vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .view_box {margin-left: auto;
-    margin-right: auto;
+
+.view_box-container::-webkit-scrollbar {
+    display: none;
+}
+
+.view_box {
+
+    flex: 0 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 250px;
+    height: 400px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    /* Para garantir que a imagem não ultrapasse as bordas do contêiner */
+}
+
+.view_box img {
     width: 100%;
-    height: 100%;
+    height: 80%;
+    object-fit: contain;
+    /* Para manter a proporção da imagem */
+
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
+
+.product-info {
+    width: 100%;
+    height: 120px;
+    padding-top: 10px;
+}
+
+.product-brand {
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   overflow: hidden;
+    cursor: pointer;
+    z-index: 8;
+    opacity: 0.2;
+}
+
+.pre-btn:hover,
+.nxt-btn:hover  {
+  opacity: 1;
+}
+.pre-btn {
+    left: 0;
+    background: linear-gradient(180deg, rgba(216, 216, 216, 0) 0%, rgb(216, 216, 216 ) 100%);
+}
+
+.nxt-btn {
+    right: 0;
+    background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, rgb(216, 216, 216 ) 100%);
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   
+}
+@media screen and (max-width: 425px) {
+
+    .view_box {
+        object-fit: contain;
+        flex: 0 0 auto;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-right: 1rem;
+        width: 100px;
+        height: 350px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        overflow: hidden;
+        /* Para garantir que a imagem não ultrapasse as bordas do contêiner */
+    }
+    .product-brand {
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+    .price {
+        font-weight: 900;
+        font-size: 16px;
+    }
 }
