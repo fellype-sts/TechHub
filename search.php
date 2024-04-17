@@ -2,7 +2,7 @@
 require("_global.php");
 $page = [
     "title" => "Procurando...",
-    "css" => "index.css",
+    "css" => "search.css",
     "js" => "search.js"
 ];
 
@@ -33,7 +33,7 @@ $categories = getCategories($conn);
 if ($query != '') :
 
 
-    
+
     $sql = <<<SQL
 SELECT 
     product_id, product_name, product_summary, product_price, product_thumbnail
@@ -120,23 +120,27 @@ endif;
 
 require("_header.php");
 ?>
-<form action="" method="GET">
-    <label for="category">Filtrar por Categoria:</label>
-    <select name="category" id="category">
-        <option value="">Todas as categorias</option>
-        <?php foreach ($categories as $category) : ?>
-            <option value="<?php echo $category['ctr_id']; ?>"><?php echo $category['ctr_name']; ?></option>
-        <?php endforeach; ?>
-    </select>
-    <label for="order">Filtrar por preço:</label>
-    <select name="order" id="order">
-        <option value="asc">Do Menor para o Maior</option>
-        <option value="desc">Do Maior para o Menor</option>
-    </select>
-    <input type="text" name="q" value="<?php echo $query; ?>" placeholder="Pesquisar...">
-    <button type="submit">Filtrar</button>
-</form>
+
 <article>
+<div class="form-container">
+    <form action="" method="GET">
+        <label for="category">Filtrar por Categoria:</label>
+        <select name="category" id="category">
+            <option value="">Todas as categorias</option>
+            <?php foreach ($categories as $category) : ?>
+                <option value="<?php echo $category['ctr_id']; ?>"><?php echo $category['ctr_name']; ?></option>
+            <?php endforeach; ?>
+        </select>
+        <label for="order">Filtrar por preço:</label>
+        <select name="order" id="order">
+            <option value="asc">Do Menor para o Maior</option>
+            <option value="desc">Do Maior para o Menor</option>
+        </select>
+        <label for="text">Nome do produto:</label>
+        <input type="text" name="q" value="<?php echo $query; ?>" placeholder="Pesquisar...">
+        <button type="submit">Filtrar</button>
+    </form>
+</div>
     <?php echo $search_view; ?>
 </article>
 <?php require("_footer.php"); ?>
