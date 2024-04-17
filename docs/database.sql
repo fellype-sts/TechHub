@@ -361,7 +361,102 @@ VALUES
     'https://randomuser.me/api/portraits/men/14.jpg',
     'doutor@belico.com',
     'bélico bélico'
-    );
+     );
+
+     INSERT INTO
+    comment (
+        cmt_product,
+        cmt_social_id,
+        cmt_social_name,
+        cmt_social_photo,
+        cmt_social_email,
+        cmt_content
+    )
+VALUES
+    (
+        '2', 
+    'abc123',
+    'doutor bélico', 
+    'https://randomuser.me/api/portraits/men/14.jpg',
+    'doutor@belico.com',
+    'bélico bélico'
+     );
+     INSERT INTO
+    comment (
+        cmt_product,
+        cmt_social_id,
+        cmt_social_name,
+        cmt_social_photo,
+        cmt_social_email,
+        cmt_content
+    )
+VALUES
+    (
+        '2', 
+    'abc123',
+    'doutor bélico', 
+    'https://randomuser.me/api/portraits/men/14.jpg',
+    'doutor@belico.com',
+    'bélico béli'
+     );
+
+     INSERT INTO
+    comment (
+        cmt_product,
+        cmt_social_id,
+        cmt_social_name,
+        cmt_social_photo,
+        cmt_social_email,
+        cmt_content
+    )
+VALUES
+    (
+        '2', 
+    'abc123',
+    'doutor bélico', 
+    'https://randomuser.me/api/portraits/men/14.jpg',
+    'doutor@belico.com',
+    'bélico béli'
+     );
+
+    INSERT INTO
+    comment (
+        cmt_product,
+        cmt_social_id,
+        cmt_social_name,
+        cmt_social_photo,
+        cmt_social_email,
+        cmt_content
+    )
+VALUES
+    (
+        '2', 
+    'abc123',
+    'doutor bélico', 
+    'https://randomuser.me/api/portraits/men/14.jpg',
+    'doutor@belico.com',
+    'bélico béli'
+     );
+
+INSERT INTO
+    comment (
+        cmt_product,
+        cmt_social_id,
+        cmt_social_name,
+        cmt_social_photo,
+        cmt_social_email,
+        cmt_content
+    )
+VALUES
+    (
+        '2', 
+    'abc123',
+    'doutor bélico', 
+    'https://randomuser.me/api/portraits/men/14.jpg',
+    'doutor@belico.com',
+    'bélico béli'
+     );
+
 INSERT INTO 
     ranking (
         rank_product, rank_scale 
@@ -394,4 +489,5 @@ INSERT INTO
             (
             '2',
             '3');
+
             
