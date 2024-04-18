@@ -68,11 +68,13 @@ body {
 }
 
 .product-category {
-    padding: 0 10vw;
-    font-size: 1.8rem;
-    font-weight: 500;
+    
     margin-bottom: 2.2rem;
     text-transform: capitalize;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 2rem;
 }
 
 .view_box-container {

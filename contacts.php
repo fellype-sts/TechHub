@@ -16,10 +16,11 @@ $page = array(
 );
 
 /**
- * Define as principais variáveis do script
+ * The $_POST[] superglobal receives data from a form submitted via the POST method.
  **/
+// debug($_POST);
 
-// Values dos campos do formulário
+// Settings for this page
 $form = [
     'name' => '',
     'email' => '',

@@ -8,6 +8,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
+.product{border-style: solid;}
 
 .product h2 {
   color: #000; /* Cor preta para o nome do produto */
@@ -27,6 +28,7 @@
 }
 
 .product a {
+  font-size: 20px;
   color: #007bff; /* Cor azul para o link do vendedor */
   text-decoration: none;
 }
@@ -44,8 +46,12 @@
 }
 
 .comment_section h2 {
+  align-items: center;
+
+
+
+  text-align: center;
   margin: 2rem 0 0 0;
-  
   padding: .5rem 0;
 }
 
@@ -55,6 +61,8 @@
 
 
 .cmt_box {
+  width: 50%; 
+  border-bottom: 1px solid black;
   background-color: #eee;
   margin-bottom: 1rem;
   border-radius: .3rem;
