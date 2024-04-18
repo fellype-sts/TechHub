@@ -77,8 +77,9 @@ if (isset($page['js']))
     </nav>
 
 
-    <div id="wrap">
+    
 
 
         </header>
+        <div id="wrap">
         <main>
