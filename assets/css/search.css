@@ -1,37 +1,15 @@
 .article:hover {
     background-color:rgb(105, 105, 105);
 }
-.view_box {
-    
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    width: auto;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    overflow: hidden; /* Para garantir que a imagem não ultrapasse as bordas do contêiner */
-}
+
 
 .view_box:hover {
     transform: translateY(-10px);
 }
 
 
-.view_box img {
-    width: auto;
-    height: 26rem;
- /* Para manter a proporção da imagem */
-    object-fit: cover; /* Para cobrir o contêiner mantendo a proporção */
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
- .view_box-container{
-    width: calc(33.33% - 20px); /* Cada produto ocupa 1/3 do espaço disponível na linha */
-}
+
+
 .view_box-row {
     display: flex; /* Faz com que os produtos dentro da linha sejam exibidos em linha */
     justify-content: space-between; /* Distribui os produtos uniformemente na linha */
@@ -86,6 +64,91 @@
 .form-container button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+/* ROW */
+
+
+.view_box-container {
+    display: flex;
+    padding: 0 5vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: 2rem;
+}
+.view_box-container::-webkit-scrollbar {
+    display: none;
+}
+
+.view_box {
+    cursor: pointer;
+    flex: 0 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 250px;
+    height: 400px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    /* Para garantir que a imagem não ultrapasse as bordas do contêiner */
+}
+
+.view_box img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    /* Para manter a proporção da imagem */
+
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-info {
+    width: 100%;
+    height: 120px;
+    padding-top: 10px;
+}
+
+.product-brand {
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   overflow: hidden;
+    cursor: pointer;
+    z-index: 8;
+    opacity: 0.2;
+}
+
+.pre-btn:hover,
+.nxt-btn:hover  {
+  opacity: 1;
+}
+.pre-btn {
+    left: 0;
+    background: linear-gradient(180deg, rgba(216, 216, 216, 0) 0%, rgb(216, 216, 216 ) 100%);
+}
+
+.nxt-btn {
+    right: 0;
+    background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, rgb(216, 216, 216 ) 100%);
+}
+
 
 @media screen and (max-width: 768px) {
     .view_box {

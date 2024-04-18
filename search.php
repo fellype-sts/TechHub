@@ -81,14 +81,13 @@ HTML;
         if ($total == 0) :
             $search_view = "<h2>Sem ofertas disponíveis no momento.</h2>";
         else :
-            $count = 0;
+            $search_view = <<<HTML
+                  <div class="view_box-container">
+            HTML;
             while ($pdt = $res->fetch_assoc()) :
                 // Verifica se é o início de uma nova linha
-                if ($count % 3 == 0) :
-                    $search_view .= '<div class="view_box-row">';
-                endif;
                 $search_view .= <<<HTML
-            <div class="view_box-container">
+          
                 <div class="view_box" onclick="location.href = 'view.php?id={$pdt['product_id']}'">
                     <img src="{$pdt['product_thumbnail']}" alt="{$pdt['product_name']}">
                     <div>
@@ -96,14 +95,12 @@ HTML;
                         <p>{$pdt['product_price']}</p>
                     </div>
                 </div>
-            </div>
+            
 HTML;
-                // Verifica se é o final de uma linha
-                if ($count % 3 == 2 || $count == $total - 1) :
-                    $search_view .= '</div>';
-                endif;
-                $count++;
             endwhile;
+            $search_view .= <<<HTML
+                  </div>
+            HTML;
         endif;
     else :
         $search_view .= <<<HTML
