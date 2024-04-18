@@ -47,9 +47,9 @@ $product = <<<PDT
         <h2 class= "section-title">{$pdt['product_name']}</h2>
         <p>{$pdt['product_summary']}</p>
         <div>{$pdt['product_content']} </div>
-        <div>{$pdt['product_price']}R$ </div>
-        <div> 
-        <a href= '{$pdt['product_seller']}'> Clique aqui para comprar</a>
+        <div class="price">{$pdt['product_price']}R$ </div>
+        <div class = "link"> 
+        <a  href= '{$pdt['product_seller']}'> Clique aqui para comprar</a>
     </div>
     </div>
 

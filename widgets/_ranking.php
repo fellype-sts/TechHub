@@ -42,7 +42,7 @@ for ($i = 1; $i <= 5; $i++) {
 
 ?>
 
-<div>
+<div class="text-ratting">
    <?php echo $stars; ?> <p> A avaliação média é de <?php echo number_format($avg_rank, 2) ?> estrelas. </p>
    <p>Avalie o produto.</p>
 </div>

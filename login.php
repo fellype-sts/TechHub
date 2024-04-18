@@ -28,7 +28,7 @@ require('_header.php');
     </p>
 </article>
 
-<aside></aside>
+
 
 <?php
 // Inclui o rodapé do documento

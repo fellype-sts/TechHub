@@ -10,6 +10,7 @@ article button {
   cursor: pointer;
 }
 body {
+  justify-content: center;
   font-family: Arial, sans-serif;
   background-color: rgb(216, 216, 216); /* Cinza claro para o fundo */
   color: #333; /* Preto para o texto */
@@ -19,25 +20,22 @@ body {
 
 /* Estilos gerais */
 .about-section {
-  max-width: 824px;
-  height: 100%;
-  margin: 5rem auto;
-  padding: 20px;
-  background-color: #fff; /* Branco para o fundo do artigo */
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  margin-bottom: 3rem;
-}
+    
+    max-width: 824px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Branco para o fundo do artigo */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 30rem;
+  }
 
-.section-title {
-  text-align: center;
-  color: #000; /* Preto para o título da seção */
-  margin-bottom: 30px;
-}
+  .section-title {
+      text-align: center;
+      color: #000; /* Preto para o título da seção */
+      margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
 
-
-/*
-Responsividade
-Telas de 768px ou mais... 
-*/
-
+  }

@@ -1,118 +1,225 @@
 /* Estilos para o produto */
 .product, .container-product-all {
-    display: block;
-    margin: auto;
-    max-width: 1024px;
-    background-color:rgb(255, 255, 255); /* Fundo branco para o produto */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  display: block;
+  margin: auto;
+  max-width: 1024px;
+  background-color:rgb(255, 255, 255); /* Fundo branco para o produto */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 .product h2 {
-    color: #000; /* Cor preta para o nome do produto */
-    margin-bottom: 10px;
+  color: #000; /* Cor preta para o nome do produto */
+  margin-bottom: 10px;
 }
 
 .product p {
-    margin-bottom: 15px;
-    line-height: 1.5; /* Espaçamento entre linhas aumentado */
+  margin-bottom: 15px;
+  line-height: 1.5; /* Espaçamento entre linhas aumentado */
 }
 
 .product img {
-    display: block;
-    margin: auto;
-    max-width: 100%; /* Imagem do produto ocupando a largura máxima */
-    margin-bottom: 15px;
+  display: block;
+  margin: auto;
+  max-width: 100%; /* Imagem do produto ocupando a largura máxima */
+  margin-bottom: 15px;
 }
 
 .product a {
-    color: #007bff; /* Cor azul para o link do vendedor */
-    text-decoration: none;
+  color: #007bff; /* Cor azul para o link do vendedor */
+  text-decoration: none;
 }
 
 .product a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .section-title {
-    text-align: center;
-    color: #000; /* Preto para o título da seção */
-    margin-bottom: 30px;
+  text-align: center;
+  color: #000; /* Preto para o título da seção */
+  margin-bottom: 30px;
 }
 .checked {
-    color: orange;
-  }
+  color: orange;
+}
 
-  .comment_section h2 {
-    margin: 2rem 0 0 0;
-    border-top: 1rem solid #ddd;
-    padding: .5rem 0;
-  }
+.comment_section h2 {
+  margin: 2rem 0 0 0;
   
-  #commentBox {
-    border-bottom: 3px double #ddd;
+  padding: .5rem 0;
+}
+
+#commentBox {
+  border-bottom: 3px double #ddd;
+}
+
+
+.cmt_box {
+  background-color: #eee;
+  margin-bottom: 1rem;
+  border-radius: .3rem;
+}
+
+.cmt_header {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  border-bottom: 3px double grey;
+}
+
+.cmt_header img {
+  display: block;
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: .5rem;
+}
+
+.cmt_body {
+  padding: .5rem;
+}
+
+#commentForm {
+  display: table;
+  margin: auto;
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem 0;
+}
+
+#commentForm textarea {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  resize: vertical;
+  border-radius: .3rem;
+  padding: .5rem;
+  border: 1px solid grey;
+  margin-bottom: .5rem;
+}
+
+#commentForm button {
+  background-color: #ddd;
+  color: #6e6e6e;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+#commentForm:valid button {
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#commentForm:invalid textarea {
+  background-color: rgb(255, 230, 230);
+}
+
+@media screen and (min-width: 768px) {
+  .article small {
+      text-align: right;
   }
+}
+
+.article small {
+  display: block;
+}
+
+/* Cores e fontes consistentes */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1, h2, h3 {
+  color: #000000; /* Azul para títulos */
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Layout limpo e organizado */
+.container-product-all {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  display: block;
   
-  .cmt_box {
-    background-color: #eee;
-    margin-bottom: 1rem;
-    border-radius: .3rem;
-  }
-  
-  .cmt_header {
-    display: flex;
-    align-items: center;
-    padding: .5rem;
-    border-bottom: 3px double grey;
-  }
-  
-  .cmt_header img {
-    display: block;
-    width: 2rem;
-    border-radius: 50%;
-    margin-right: .5rem;
-  }
-  
-  .cmt_body {
-    padding: .5rem;
-  }
-  
-  #commentForm {
-    display: table;
-    margin: auto;
-    width: 100%;
-    max-width: 450px;
-    padding: 1rem 0;
-  }
-  
-  #commentForm textarea {
-    display: block;
-    width: 100%;
-    height: 6rem;
-    resize: vertical;
-    border-radius: .3rem;
-    padding: .5rem;
-    border: 1px solid grey;
-    margin-bottom: .5rem;
-  }
-  
-  #commentForm button {
-    background-color: #ddd;
-    color: #6e6e6e;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-  
-  #commentForm:valid button {
-    background-color: steelblue;
-    color: white;
-    cursor: pointer;
-    pointer-events: all;
-  }
-  
-  #commentForm:invalid textarea {
-    background-color: rgb(255, 230, 230);
-  }
-  @media screen and (min-width: 768px) {.article small {text-align: right;}  }
-  .article small{ display: block;
-  }
+  max-width: 1024px;
+}
+
+.product {
+  width: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+  color: #000000; /* Cor preta para o nome do produto */
+  margin-bottom: 10px;
+}
+
+.product p {
+  margin-bottom: 15px;
+  line-height: 1.5; /* Espaçamento entre linhas aumentado */
+}
+
+.product img {
+  display: block;
+  margin: auto;
+  max-width: 100%; /* Imagem do produto ocupando a largura máxima */
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+/* Destaque o preço */
+.product-price {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a parte de preço */
+
+.link {
+  justify-content: center;
+}
+
+.price {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000; /* Cor azul para o preço */
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+#rattingSystem,
+p,
+.text-ratting {
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* Destaque o produto */
+.product-description {
+  text-align: center;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilo de texto descritivo */
+.product-description p {
+  line-height: 1.5;
+}

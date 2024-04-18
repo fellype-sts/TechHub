@@ -239,7 +239,7 @@ footer {
     width: 100%;
     height: 45px;
     position: absolute;
-
+}
 footer div {
     flex-grow: 1;
 }
@@ -278,6 +278,11 @@ main article {
     background-color: rgb(216, 216, 216);
 }
 
+/* Ao passar o mouse sobre os links do menu */
+.nav a:hover {
+    background-color: rgb(0, 140, 255); /* Cor de fundo ao passar o mouse */
+    color: rgb(212, 212, 212); /* Cor do texto ao passar o mouse */
+}
 
 
 
@@ -400,7 +405,7 @@ button {
 
     .nav {
         width: 100%;
-        height: 20rem;
+        height: 12rem;
         transform: translateX(-30rem);
         position: absolute;
         top: 0;
