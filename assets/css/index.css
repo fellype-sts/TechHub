@@ -64,7 +64,7 @@ body {
 .product-section {
     position: relative;
     overflow: hidden;
-    padding: 1.2rem;
+    /* padding: 1.2rem; */
 }
 
 .product-category {
@@ -87,7 +87,7 @@ body {
 }
 
 .view_box {
-
+    cursor: pointer;
     flex: 0 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -157,14 +157,8 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
 
 
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-   
-}
 @media screen and (max-width: 425px) {
 
     .view_box {
